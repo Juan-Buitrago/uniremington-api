@@ -310,6 +310,6 @@ app.put('/updateStateByRecord', cors(corsOptions), function (req, res) {
     }
 });
 
-app.listen(() => {
-    console.log("El servidor está inicializado en el puerto 3000");
+app.listen(80,() => {
+    console.log("El servidor está inicializado en el puerto 80");
 });
