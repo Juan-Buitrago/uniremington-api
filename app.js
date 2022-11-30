@@ -68,7 +68,7 @@ app.get('/getRecordByStateCreate', cors(corsOptions), function (req, res) {
             let query = `SELECT r.id,
                                r.title,
                                r.description,
-                               CONCAT('$',FORMAT(r.price,0)) AS price,
+                               r.price,
                                r.state,
                                r.active
                         FROM record r
